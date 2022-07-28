@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Tip Calculator</title>
+</head>
+
+<body>
+
+    <div class="logo">
+        <img src="assets/img/logo.svg" alt="">
+    </div>
+
+    <div class="wrapper">
+        <div class="col_1">
+            <div class="top__input">
+                <label for="billInput">Bill</label>
+                <form action="" id="form">
+                    <input type="number" placeholder="142.55" id="billInput">
+                </form>
+            </div>
+            <div class="main__items">
+                <div class="suptitle">
+                    <p>Select Tip %</p>
+                </div>
+                <div class="items">
+                    <div class="item">
+                        <p id="fiveProcent">5%</p>
+                    </div>
+                    <div class="item">
+                        <p id="tenProcent">10%</p>
+                    </div>
+                    <div class="item">
+                        <p id="fiveteenProcent">15%</p>
+                    </div>
+                    <div class="item">
+                        <p id="twentyfiveProcent">25%</p>
+                    </div>
+                    <div class="item">
+                        <p id="fiftyProcent">50%</p>
+                    </div>
+                    <div class="input__item">
+                        <input type="number" id="customInput" placeholder="Custom">
+                    </div>
+                </div>
+            </div>
+            <div class="bottom__input">
+                <label for="numberInput">Number of People</label>
+                <form action="" id="form2">
+                    <input type="number" placeholder="5" id="numberInput">
+                </form>
+            </div>
+        </div>
+        <div class="col_2">
+            <div class="amount">
+                <div class="amount__info">
+                    <p>Tip Amount</p>
+                    <span>/ person</span>
+                </div>
+                <div class="amount__number">
+                    <p id="amount">$0.00</p>
+                </div>
+            </div>
+            <div class="total">
+                <div class="total__info">
+                    <p>Total</p>
+                    <span>/ person</span>
+                </div>
+                <div class="total__number">
+                    <p id="total">$0.00</p>
+                </div>
+            </div>
+            <div class="reset__btn">
+                <button id="reset">reset</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
